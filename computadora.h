@@ -3,7 +3,8 @@
 
 #include <iostream>
 #include <iomanip>
-#include "computadora.h"
+#include <string>
+
 using namespace std;
 
 class Computadora
@@ -42,8 +43,8 @@ public:
         out << setw(12) << c.Ram;
         out << setw(10) << c.Cant_nucleos;
         out << endl;
-        return out;
 
+        return out;
     }
     friend istream& operator >>(istream &in, Computadora &c)
     {
